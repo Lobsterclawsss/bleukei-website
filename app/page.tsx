@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Magnetic from '@/components/Magnetic';
 import {
   Megaphone,
   TrendingUp,
@@ -146,22 +147,26 @@ function HeroSection() {
           transition={{ duration: 0.7, delay: 0.95 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-white text-black font-semibold px-7 py-4 rounded-xl hover:bg-white/90 transition-colors"
-          >
-            <Calendar className="w-5 h-5" />
-            Book a Call
-          </a>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 glass glass-hover font-semibold px-7 py-4 rounded-xl text-white/90 hover:text-white transition-colors"
-          >
-            Tell Us About Your Project
-            <ArrowRight className="w-5 h-5" />
-          </a>
+          <Magnetic>
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white text-black font-semibold px-7 py-4 rounded-xl hover:bg-white/90 transition-colors"
+            >
+              <Calendar className="w-5 h-5" />
+              Book a Call
+            </a>
+          </Magnetic>
+          <Magnetic>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 glass glass-hover font-semibold px-7 py-4 rounded-xl text-white/90 hover:text-white transition-colors"
+            >
+              Tell Us About Your Project
+              <ArrowRight className="w-5 h-5" />
+            </a>
+          </Magnetic>
         </motion.div>
       </div>
 
@@ -295,11 +300,12 @@ function ServicesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-40px' }}
               transition={{ duration: 0.5, delay: i * 0.07 }}
-              className="group grid grid-cols-12 gap-4 sm:gap-8 py-10 border-b border-white/10 transition-colors hover:bg-white/[0.02] px-2 sm:px-4"
+              className="group grid grid-cols-12 gap-4 sm:gap-8 py-10 border-b border-white/10 transition-all duration-300 hover:bg-white/[0.02] hover:pl-6 px-2 sm:px-4 relative"
             >
               <div className="col-span-2 sm:col-span-1">
                 <span className="text-sm font-bold gradient-text-teal">{service.number}</span>
               </div>
+              <ArrowRight className="hidden sm:block absolute right-6 top-1/2 -translate-y-1/2 w-5 h-5 text-teal-400 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
               <div className="col-span-10 sm:col-span-4 flex items-start gap-3">
                 <service.icon className={`w-6 h-6 mt-1 ${service.accent} shrink-0`} />
                 <h3 className="text-2xl sm:text-3xl font-semibold tracking-tight">
@@ -754,7 +760,7 @@ function ContactSection() {
             transition={{ duration: 0.5 }}
             className="lg:col-span-2"
           >
-            <div className="glass rounded-2xl p-8 h-full flex flex-col justify-between glow-royal">
+            <div className="gradient-border rounded-2xl p-8 h-full flex flex-col justify-between glow-royal">
               <div>
                 <Calendar className="w-8 h-8 text-royal-400 mb-5" />
                 <h3 className="text-2xl font-semibold mb-3">Book a free consultation</h3>
