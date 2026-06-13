@@ -2,7 +2,7 @@ name: Bleukei Website CI
 
 on:
   push:
-    branches: [main, master]
+    branches: [main, master, interactions-pass]
   pull_request:
     branches: [main, master]
 
