@@ -14,8 +14,9 @@ export default function Privacy() {
       <h2 className="text-xl font-semibold text-white mt-10 mb-3">What we collect</h2>
       <p className="mb-4">
         When you submit our contact form, we collect the information you provide: your name,
-        email address, company name, and message. If you book a call through our scheduling
-        link, scheduling is handled by Google Calendar under Google&apos;s own privacy policy.
+        email address, company name, and message. If you book a call, scheduling is handled
+        by Cal.com under their own privacy policy, and the booking form is displayed on our
+        site inside an embedded frame served by Cal.com.
       </p>
 
       <h2 className="text-xl font-semibold text-white mt-10 mb-3">How we use it</h2>
