@@ -856,7 +856,7 @@ function ContactSection() {
                 {status === 'error' && (
                   <p className="flex items-center gap-2 text-royal-300 text-sm">
                     <AlertCircle className="w-4 h-4" />
-                    Something went wrong. Email us directly at nb@noaberger.com.
+                    Something went wrong. Email us directly at hello@bleukei.com.
                   </p>
                 )}
               </form>
@@ -905,7 +905,7 @@ function Footer() {
               Instagram
             </a>
             <a
-              href="mailto:nb@noaberger.com"
+              href="mailto:hello@bleukei.com"
               className="text-white/50 hover:text-teal-400 transition-colors"
             >
               Email
