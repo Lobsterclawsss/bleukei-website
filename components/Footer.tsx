@@ -30,7 +30,7 @@ const Footer = () => {
                 Instagram
               </a>
               <a
-                href="mailto:NB@noaberger.com"
+                href="mailto:hello@bleukei.com"
                 className="text-gray-400 hover:text-teal-400 transition-colors text-sm"
               >
                 Email
