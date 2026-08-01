@@ -14,8 +14,9 @@ export default function Privacy() {
       <h2 className="text-xl font-semibold text-white mt-10 mb-3">What we collect</h2>
       <p className="mb-4">
         When you submit our contact form, we collect the information you provide: your name,
-        email address, company name, and message. If you book a call through our scheduling
-        link, scheduling is handled by Google Calendar under Google&apos;s own privacy policy.
+        email address, company name, and message. If you book a call, scheduling is handled
+        by Cal.com under their own privacy policy, and the booking form is displayed on our
+        site inside an embedded frame served by Cal.com.
       </p>
 
       <h2 className="text-xl font-semibold text-white mt-10 mb-3">How we use it</h2>
@@ -36,8 +37,8 @@ export default function Privacy() {
       <p className="mb-4">
         We keep inquiry emails for as long as needed to handle the conversation. You can
         request access to or deletion of your information at any time by emailing{' '}
-        <a href="mailto:nb@noaberger.com" className="text-teal-400 hover:text-teal-300">
-          nb@noaberger.com
+        <a href="mailto:hello@bleukei.com" className="text-teal-400 hover:text-teal-300">
+          hello@bleukei.com
         </a>.
       </p>
 
@@ -48,7 +49,7 @@ export default function Privacy() {
       </p>
 
       <p className="mt-12 text-sm text-white/40">
-        Questions about this policy: nb@noaberger.com
+        Questions about this policy: hello@bleukei.com
       </p>
     </main>
   );

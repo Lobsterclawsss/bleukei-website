@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Megaphone,
@@ -17,7 +18,10 @@ import {
   Plus,
 } from 'lucide-react';
 
-const BOOKING_URL = 'https://calendar.app.google/9HkGH8jzjx82fwfk8';
+// Internal booking page. The cal.com embed lives at /book so every CTA lands on
+// a page we control and can measure, rather than handing the visitor off to a
+// third-party domain mid-funnel.
+const BOOKING_URL = '/book';
 
 // Character-stagger headline word
 function StaggerWord({ text, delayStart = 0 }: { text: string; delayStart?: number }) {
@@ -146,15 +150,13 @@ function HeroSection() {
           transition={{ duration: 0.7, delay: 0.95 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <a
+          <Link
             href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-black font-semibold px-7 py-4 rounded-xl hover:bg-white/90 transition-colors"
           >
             <Calendar className="w-5 h-5" />
             Book a Call
-          </a>
+          </Link>
           <a
             href="#contact"
             className="inline-flex items-center gap-2 glass glass-hover font-semibold px-7 py-4 rounded-xl text-white/90 hover:text-white transition-colors"
@@ -763,15 +765,13 @@ function ContactSection() {
                   whether we are a fit.
                 </p>
               </div>
-              <a
+              <Link
                 href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-royal-600 hover:bg-royal-500 text-white font-semibold px-6 py-4 rounded-xl transition-colors"
               >
                 <Calendar className="w-5 h-5" />
                 Schedule a Call
-              </a>
+              </Link>
             </div>
           </motion.div>
 
@@ -856,7 +856,7 @@ function ContactSection() {
                 {status === 'error' && (
                   <p className="flex items-center gap-2 text-royal-300 text-sm">
                     <AlertCircle className="w-4 h-4" />
-                    Something went wrong. Email us directly at nb@noaberger.com.
+                    Something went wrong. Email us directly at hello@bleukei.com.
                   </p>
                 )}
               </form>
@@ -905,7 +905,7 @@ function Footer() {
               Instagram
             </a>
             <a
-              href="mailto:nb@noaberger.com"
+              href="mailto:hello@bleukei.com"
               className="text-white/50 hover:text-teal-400 transition-colors"
             >
               Email

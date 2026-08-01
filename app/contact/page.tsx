@@ -85,22 +85,21 @@ const Contact = () => {
           >
             <div className="text-5xl">📅</div>
             <div>
-              <p className="text-white text-xl font-semibold mb-2">30-Minute Strategy Call</p>
+              <p className="text-white text-xl font-semibold mb-2">15, 30 or 60 minutes</p>
               <p className="text-gray-400 text-sm max-w-md mx-auto">
-                Pick a time that works for you. We'll discuss your goals, current challenges, and how AI automation can help.
+                Pick the length that matches what you need. Fifteen minutes for a single
+                question, thirty to talk through your business, an hour to scope a build.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a
-                href="https://calendar.app.google/9HkGH8jzjx82fwfk8"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/book"
                 className="inline-flex items-center justify-center gap-2 bg-teal-500 hover:bg-teal-600 text-white font-semibold px-8 py-4 rounded-xl transition-all hover:scale-[1.02]"
               >
-                <span>📆</span> Book a Free Call
-              </a>
+                <span>📆</span> See available times
+              </Link>
             </div>
-            <p className="text-gray-500 text-xs">Opens Google Calendar · No credit card required</p>
+            <p className="text-gray-500 text-xs">No commitment required</p>
           </motion.div>
         </div>
       </section>
@@ -219,10 +218,10 @@ const Contact = () => {
           <h2 className="text-3xl font-bold mb-8">Or Reach Out Directly</h2>
           <div className="flex flex-col md:flex-row justify-center items-center gap-8">
             <a 
-              href="mailto:NB@noaberger.com" 
+              href="mailto:hello@bleukei.com" 
               className="flex items-center gap-2 text-teal-400 hover:text-teal-300 transition-colors"
             >
-              <span>✉️</span> NB@noaberger.com
+              <span>✉️</span> hello@bleukei.com
             </a>
             <Link
               href="https://www.linkedin.com/in/noabberger/"
