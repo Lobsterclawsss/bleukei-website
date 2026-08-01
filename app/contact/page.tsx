@@ -218,10 +218,10 @@ const Contact = () => {
           <h2 className="text-3xl font-bold mb-8">Or Reach Out Directly</h2>
           <div className="flex flex-col md:flex-row justify-center items-center gap-8">
             <a 
-              href="mailto:NB@noaberger.com" 
+              href="mailto:hello@bleukei.com" 
               className="flex items-center gap-2 text-teal-400 hover:text-teal-300 transition-colors"
             >
-              <span>✉️</span> NB@noaberger.com
+              <span>✉️</span> hello@bleukei.com
             </a>
             <Link
               href="https://www.linkedin.com/in/noabberger/"
